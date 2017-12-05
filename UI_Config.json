@@ -1,57 +1,31 @@
 {
 	"output_file": "settings.json",
-	"cd_response": {
+	"empty_love_response": {
 		"type": "textbox",
-		"value": "{0} the command is still on cooldown for {1} seconds!",
-		"label": "Cooldown Response",
-		"tooltip": "The message that the bot will display.",
-		"group": "Responses"
+		"value": "Align the stars and seek the guidance of the Love Meter with \"!love BabyRage \"",
+		"label": "Empty !love command",
+		"tooltip": "The message that the bot will display when a user just types !love command.",
+		"group": "Command Responses"
 	},
-	"use_cd": {
-		"type": "checkbox",
-		"value": false,
-		"label": "Use Cooldown Message",
-		"tooltip": "To display CoolDown Message?",
-		"group": "Checkboxes"
+	"love_streamer_response": {
+		"type": "textbox",
+		"value": "The love $fromuser has for our beloved Dear Leader $streamername transcends all",
+		"label": "!love <streamer>",
+		"tooltip": "The message that the bot will display when a user types !love with the streamer name.",
+		"group": "Command Responses"
+	},
+	"love_someone_response": {
+		"type": "textbox",
+		"value": "There's $percentage% :heart: between $fromuser and $beloved",
+		"label": "!love <someone>",
+		"tooltip": "The message that the bot will display when a user types !love to someone.",
+		"group": "Command Responses"
 	},
 	"cd": {
 		"type": "numberbox",
-		"label": "COOLDOWN (seconds)",
+		"label": "Cooldown (seconds)",
 		"value": 10,
 		"tooltip": "Cooldown in seconds.",
-		"group": "Numbers"
-	},
-	"choice": {
-		"type": "dropdown",
-		"label": "Mode",
-		"value": "Mode 1",
-		"tooltip": "This will determine the mode.",
-		"items": ["Mode 1","Mode 2","Mode 3"],
-		"group": "Dropdowns"
-	},
-	"headcolor": {
-		"type": "colorpicker",
-		"label": "Header Color",
-		"value": "rgba(255,0,0,1.0)",
-		"tooltip": "",
-		"group": "Color Pickers"
-	},
-	"interval": {
-		"type": "slider",
-		"label": "Interval",
-		"value": 1,
-		"min": 0,
-		"max": 10,
-		"ticks": 0.1,
-		"tooltip": "",
-		"group": "Sliders"
-	},
-	"btnStart":{
-		"type": "button",
-		"label": "Start Timer",
-		"tooltip": "Starts the Timer!",
-		"function": "StartTimer",
-		"wsevent": "EVENT_START_TIMER",
-		"group": "buttons"
+		"group": "General"
 	}
 }
