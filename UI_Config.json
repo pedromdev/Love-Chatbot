@@ -1,0 +1,57 @@
+{
+	"output_file": "settings.json",
+	"cd_response": {
+		"type": "textbox",
+		"value": "{0} the command is still on cooldown for {1} seconds!",
+		"label": "Cooldown Response",
+		"tooltip": "The message that the bot will display.",
+		"group": "Responses"
+	},
+	"use_cd": {
+		"type": "checkbox",
+		"value": false,
+		"label": "Use Cooldown Message",
+		"tooltip": "To display CoolDown Message?",
+		"group": "Checkboxes"
+	},
+	"cd": {
+		"type": "numberbox",
+		"label": "COOLDOWN (seconds)",
+		"value": 10,
+		"tooltip": "Cooldown in seconds.",
+		"group": "Numbers"
+	},
+	"choice": {
+		"type": "dropdown",
+		"label": "Mode",
+		"value": "Mode 1",
+		"tooltip": "This will determine the mode.",
+		"items": ["Mode 1","Mode 2","Mode 3"],
+		"group": "Dropdowns"
+	},
+	"headcolor": {
+		"type": "colorpicker",
+		"label": "Header Color",
+		"value": "rgba(255,0,0,1.0)",
+		"tooltip": "",
+		"group": "Color Pickers"
+	},
+	"interval": {
+		"type": "slider",
+		"label": "Interval",
+		"value": 1,
+		"min": 0,
+		"max": 10,
+		"ticks": 0.1,
+		"tooltip": "",
+		"group": "Sliders"
+	},
+	"btnStart":{
+		"type": "button",
+		"label": "Start Timer",
+		"tooltip": "Starts the Timer!",
+		"function": "StartTimer",
+		"wsevent": "EVENT_START_TIMER",
+		"group": "buttons"
+	}
+}
