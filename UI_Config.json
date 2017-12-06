@@ -27,5 +27,12 @@
 		"value": 10,
 		"tooltip": "Cooldown in seconds.",
 		"group": "General"
+	},
+	 "save_love_percentage": {
+		"type": "checkbox",
+		"value": false,
+		"label": "Save love percentage",
+		"tooltip": "The bot will display the same percentage displayed previously",
+		"group": "General"
 	}
 }

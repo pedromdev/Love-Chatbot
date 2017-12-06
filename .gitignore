@@ -103,3 +103,4 @@ ENV/
 # Other files
 settings.js
 settings.json
+love.s3db
